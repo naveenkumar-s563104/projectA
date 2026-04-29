@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>School Athletics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+  <img src="logo0.png" alt="Springfield Commonwealth Academy logo" class="logo-img">
+  <span class="logo-text">
+    Springfield<br>
+    Commonwealth<br>
+    Academy
+  </span>
+</div>
+
+    <nav class="nav-desktop">
+      <ul class="nav-list">
+        <li class="nav-item has-menu">
+          <button class="nav-link">Admissions</button>
+          <div class="dropdown">
+            <a href="#">Why Athletics?</a>
+            <a href="#">Tuition & Financial Aid</a>
+            <a href="#">Inquiry Form</a>
+            <a href="#">Campus Tours & Shadow Days</a>
+          </div>
+        </li>
+
+        <li class="nav-item has-menu">
+          <button class="nav-link">Academics</button>
+          <div class="dropdown">
+            <a href="#">Curriculum Overview</a>
+            <a href="#">NCAA Eligibility & Compliance</a>
+            <a href="#">College Counseling</a>
+            <a href="#">Faculty Directory</a>
+          </div>
+        </li>
+
+        <li class="nav-item has-menu">
+          <button class="nav-link">Athletics</button>
+          <div class="mega-menu">
+            <div class="mega-column">
+              <h4>Basketball (Boys & Girls)</h4>
+              <a href="#">Varsity & JV Rosters</a>
+              <a href="#">Schedule & Results</a>
+              <a href="#">Team Highlights (Video)</a>
+              <a href="#">Coaching Staff Bios</a>
+            </div>
+            <div class="mega-column">
+              <h4>Soccer (Boys & Girls)</h4>
+              <a href="#">Varsity & JV Rosters</a>
+              <a href="#">Schedule & Results</a>
+              <a href="#">Match Highlights (Video)</a>
+              <a href="#">Coaching Staff Bios</a>
+            </div>
+            <div class="mega-column">
+              <h4>Athletic Facilities</h4>
+              <a href="#">Performance Gym</a>
+              <a href="#">FIFA‑Regulated Turf Field</a>
+              <a href="#">Strength & Conditioning Lab</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-menu">
+          <button class="nav-link">Recruiting</button>
+          <div class="dropdown dropdown-wide">
+            <div>
+              <h4>For College Coaches</h4>
+              <a href="#">Digital Player Profiles</a>
+              <a href="#">Game Film & Live Streams</a>
+              <a href="#">Scouting Contact Info</a>
+            </div>
+            <div>
+              <h4>The Recruitment Path</h4>
+              <a href="#">Recruiting Timeline (9th–12th)</a>
+              <a href="#">Player Success Stories</a>
+              <a href="#">Placement List</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-menu">
+          <button class="nav-link">Student Life</button>
+          <div class="dropdown">
+            <a href="#">Residential Life (Boarding)</a>
+            <a href="#">Clubs & Activities</a>
+            <a href="#">Health & Wellness</a>
+          </div>
+        </li>
+
+        <li class="nav-item has-menu">
+          <button class="nav-link">News</button>
+          <div class="dropdown">
+            <a href="#">School Blog</a>
+            <a href="#">Photo Gallery</a>
+            <a href="#">Livestream Calendar</a>
+          </div>
+        </li>
+
+        <li class="nav-item has-menu">
+          <button class="nav-link">Contact</button>
+          <div class="dropdown">
+            <a href="#">General Contact</a>
+            <a href="#">Coaching Staff Directory</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#" class="btn btn-primary">Apply Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <button class="mobile-close" id="mobileClose">✕</button>
+
+      <nav class="mobile-nav">
+        <details>
+          <summary>Admissions</summary>
+          <a href="#">Why Athletics?</a>
+          <a href="#">Tuition & Financial Aid</a>
+          <a href="#">Inquiry Form</a>
+          <a href="#">Campus Tours & Shadow Days</a>
+        </details>
+
+        <details>
+          <summary>Academics</summary>
+          <a href="#">Curriculum Overview</a>
+          <a href="#">NCAA Eligibility & Compliance</a>
+          <a href="#">College Counseling</a>
+          <a href="#">Faculty Directory</a>
+        </details>
+
+        <details>
+          <summary>Athletics</summary>
+          <a href="#">Basketball (Boys & Girls)</a>
+          <a href="#">Soccer (Boys & Girls)</a>
+          <a href="#">Athletic Facilities</a>
+        </details>
+
+        <details>
+          <summary>College Recruiting Hub</summary>
+          <a href="#">For College Coaches</a>
+          <a href="#">The Recruitment Path</a>
+        </details>
+
+        <details>
+          <summary>Student Life</summary>
+          <a href="#">Residential Life (Boarding)</a>
+          <a href="#">Clubs & Activities</a>
+          <a href="#">Health & Wellness</a>
+        </details>
+
+        <details>
+          <summary>News & Media</summary>
+          <a href="#">School Blog</a>
+          <a href="#">Photo Gallery</a>
+          <a href="#">Livestream Calendar</a>
+        </details>
+
+        <details>
+          <summary>Contact</summary>
+          <a href="#">General Contact</a>
+          <a href="#">Coaching Staff Directory</a>
+        </details>
+      </nav>
+
+      <a href="#" class="btn btn-primary btn-mobile-cta">Apply Now</a>
+    </div>
+  </div>
+
+  <main>
+  <section class="video-hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="hero-poster.png">
+        <source src="hero2.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>College-Ready Athletes Start Here.</h1>
+        <p class="hero-sub">
+            A premier academic and athletic institution preparing student-athletes
+            for collegiate success and global leadership.
+        </p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Apply Now</a>
+        <a href="#" class="btn btn-outline">View Programs</a>
+      </div>
+    </div>
+
+    <div class="scroll-arrow">↓</div>
+  </section>
+  <section class="program-preview">
+  <div class="section-heading">
+    <p class="eyebrow">Athletics at SCA</p>
+    <h2>Programs Built for Competitive Student-Athletes</h2>
+  </div>
+
+  <div class="program-grid">
+    <div class="program-card">
+    <span class="card-number">01</span>
+    <h3>Basketball</h3>
+    <p>Competitive training, team development, and game preparation.</p>
+    <a href="#" class="card-link">Explore Basketball →</a>
+    </div>
+
+    <div class="program-card">
+    <span class="card-number">02</span> 
+    <h3>Soccer</h3>
+    <p>Elite player development with a focus on skill, discipline, and growth.</p>
+    <a href="#" class="card-link">Explore Soccer →</a>
+    </div>
+
+    <div class="program-card">
+    <span class="card-number">03</span>
+      <h3>Recruiting</h3>
+      <p>Support for profiles, film, exposure, and college placement pathways.</p>
+      <a href="#" class="card-link">Explore Recruiting →</a>
+    </div>
+  </div>
+</section>
+<section class="stats-section">
+  <div class="stat">
+    <h3>Elite</h3>
+    <p>Athletic Training</p>
+  </div>
+
+  <div class="stat">
+    <h3>NCAA</h3>
+    <p>Pathway Support</p>
+  </div>
+
+  <div class="stat">
+    <h3>Global</h3>
+    <p>Student Community</p>
+  </div>
+
+  <div class="stat">
+    <h3>College</h3>
+    <p>Placement Focus</p>
+  </div>
+</section>
+<section class="coach-section">
+  <div class="coach-container">
+
+    <div class="coach-image">
+      <img src="coach.png" alt="Head Coach">
+    </div>
+
+    <div class="coach-content">
+      <p class="eyebrow">Leadership</p>
+      <h2>Led by Experienced Coaches</h2>
+
+      <p>
+        Springfield Commonwealth Academy’s athletics program is guided by
+        experienced coaches focused on development, discipline, and college readiness.
+      </p>
+
+      <a href="#" class="btn btn-outline">Meet the Coaching Staff</a>
+    </div>
+
+  </div>
+</section>
+</main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      document.body.classList.add('no-scroll');
+    });
+
+    mobileClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      document.body.classList.remove('no-scroll');
+    });
+  </script>
+  <div class="footer-bottom">
+    <p>© 2026 Springfield Commonwealth Academy. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
