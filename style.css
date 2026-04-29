@@ -273,28 +273,34 @@ h4 {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  z-index: 200;
-  background: rgba(0, 0, 0, 0.65);
+  z-index: 2000; /* High enough to cover everything */
+  background: rgba(0, 0, 0, 0.8);
   opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--transition-med);
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .mobile-menu.open {
   opacity: 1;
-  pointer-events: auto;
+  visibility: visible;
 }
-
+body.no-scroll .hamburger {
+  display: none !important;
+}
 .mobile-menu-inner {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
+  z-index: 1001;
+
   width: 82%;
   max-width: 420px;
   height: 100%;
+
   background: var(--bg-secondary);
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-soft);
+
   transform: translateX(100%);
   transition: transform var(--transition-med);
   overflow-y: auto;
@@ -306,13 +312,15 @@ h4 {
 
 .mobile-close {
   position: absolute;
-  top: var(--spacing-md);
-  right: var(--spacing-md);
+  top: 20px;
+  right: 20px;
+  z-index: 2100; /* Higher than the inner panel */
   background: none;
   border: none;
-  color: var(--text-primary);
-  font-size: 24px;
+  color: white;
+  font-size: 35px;
   cursor: pointer;
+  padding: 10px; /* Makes it easier to hit with a thumb */
 }
 
 .mobile-nav {
@@ -439,11 +447,8 @@ h4 {
   left: 0;
   width: 100%;
   background: transparent;
-  border-bottom: none;
-  backdrop-filter: none;
-  z-index: 50;
-  display: flex;
-  align-items: center;
+  box-shadow: none;
+  z-index: 1000;
 }
 
 .logo {
@@ -474,6 +479,9 @@ h4 {
   font-weight: 600;
   text-transform: none;
   letter-spacing: 0;
+}
+.nav-link:hover {
+  color: #d4af37; 
 }
 
 .video-hero {
@@ -821,16 +829,7 @@ section {
     grid-template-columns: 1fr;
   }
 }
-
-  .nav-actions .btn-primary {
-    display: none;
-    
-  }
-
-    .hero-content h1 {
-  font-size: 38px;
-}
-  
+ 
 /* DROPDOWN POLISH */
 
 .dropdown,

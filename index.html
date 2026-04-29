@@ -116,7 +116,7 @@
 
     <div class="nav-actions">
       <a href="#" class="btn btn-primary">Apply Now</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -125,7 +125,7 @@
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-inner">
-      <button class="mobile-close" id="mobileClose">✕</button>
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
 
       <nav class="mobile-nav">
         <details>
@@ -275,25 +275,12 @@
   </div>
 </section>
 </main>
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileClose = document.getElementById('mobileClose');
-
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.add('open');
-      document.body.classList.add('no-scroll');
-    });
-
-    mobileClose.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      document.body.classList.remove('no-scroll');
-    });
-  </script>
+  <footer class="site-footer">
   <div class="footer-bottom">
     <p>© 2026 Springfield Commonwealth Academy. All rights reserved.</p>
   </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
